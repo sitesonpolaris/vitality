@@ -52,18 +52,7 @@ export default function Contact() {
             Have questions about our products or interested in placing a custom order?
             We'd love to hear from you.
           </p>
-          
-{/*           <div className="space-y-6">
-            <div className="flex items-start space-x-4">
-              <MapPin className="h-6 w-6 text-primary flex-shrink-0" />
-              <div>
-                <h3 className="font-medium text-gray-900">Visit Us</h3>
-                <p className="mt-2 text-gray-600">
-                  2130 Allen Jay Drive<br />
-                   Charlotte, NC 28216
-                </p>
-              </div>
-            </div> */}
+        
             
             <div className="flex items-start space-x-4">
               <Phone className="h-6 w-6 text-primary flex-shrink-0" />
