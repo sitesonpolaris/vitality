@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
+
+// Reusable Contact Detail Component
+const ContactDetail = ({ icon: Icon, title, content }: { icon: any; title: string; content: string }) => (
+  <div className="flex items-start space-x-4">
+    <Icon className="h-6 w-6 text-primary flex-shrink-0" />
+    <div>
+      <h3 className="font-medium text-gray-900">{title}</h3>
+      <p className="mt-2 text-gray-600">{content}</p>
+    </div>
+  </div>
+);
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -31,7 +42,7 @@ export default function Contact() {
       })
       .catch((err) => {
         setStatus('error');
-        setError(err.message);
+        setError(err.message || 'Something went wrong. Please try again.');
       });
   };
 
@@ -43,7 +54,7 @@ export default function Contact() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">Contact Us</h1>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Information */}
         <div>
@@ -52,23 +63,10 @@ export default function Contact() {
             Have questions about our products or interested in placing a custom order?
             We'd love to hear from you.
           </p>
-        
-            
-            <div className="flex items-start space-x-4">
-              <Phone className="h-6 w-6 text-primary flex-shrink-0" />
-              <div>
-                <h3 className="font-medium text-gray-900">Call Us</h3>
-                <p className="mt-2 text-gray-600">(919) 730-8782</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <Mail className="h-6 w-6 text-primary flex-shrink-0" />
-              <div>
-                <h3 className="font-medium text-gray-900">Email Us</h3>
-                <p className="mt-2 text-gray-600">kayobless@gmail.com</p>
-              </div>
-            </div>
+
+          <div className="space-y-6">
+            <ContactDetail icon={Phone} title="Call Us" content="(919) 730-8782" />
+            <ContactDetail icon={Mail} title="Email Us" content="kayobless@gmail.com" />
           </div>
         </div>
 
@@ -89,7 +87,7 @@ export default function Contact() {
                 required
               />
             </div>
-            
+
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 Email
@@ -104,7 +102,7 @@ export default function Contact() {
                 required
               />
             </div>
-            
+
             <div>
               <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
                 Subject
@@ -119,7 +117,7 @@ export default function Contact() {
                 required
               />
             </div>
-            
+
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">
                 Message
@@ -134,7 +132,7 @@ export default function Contact() {
                 required
               ></textarea>
             </div>
-            
+
             {status === 'success' && (
               <div className="p-4 bg-green-50 border border-green-200 rounded-md">
                 <p className="text-green-600">Message sent successfully!</p>
@@ -143,7 +141,7 @@ export default function Contact() {
 
             {status === 'error' && (
               <div className="p-4 bg-red-50 border border-red-200 rounded-md">
-                <p className="text-red-600">{error || 'Failed to send message. Please try again.'}</p>
+                <p className="text-red-600">{error}</p>
               </div>
             )}
 
