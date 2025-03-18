@@ -53,7 +53,7 @@ export default function Contact() {
             We'd love to hear from you.
           </p>
           
-          <div className="space-y-6">
+{/*           <div className="space-y-6">
             <div className="flex items-start space-x-4">
               <MapPin className="h-6 w-6 text-primary flex-shrink-0" />
               <div>
@@ -63,7 +63,7 @@ export default function Contact() {
                    Charlotte, NC 28216
                 </p>
               </div>
-            </div>
+            </div> */}
             
             <div className="flex items-start space-x-4">
               <Phone className="h-6 w-6 text-primary flex-shrink-0" />
