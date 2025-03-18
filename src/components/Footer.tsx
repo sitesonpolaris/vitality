@@ -55,13 +55,6 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact Us</h3>
             <ul className="space-y-3">
-{/*               <li className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-amber-600 flex-shrink-0 mt-1" />
-                <span className="text-gray-600">
-                  2130 Allen Jay Drive<br />
-                  Charlotte, NC 28216
-                </span>
-              </li> */}
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-amber-600 flex-shrink-0" />
                 <span className="text-gray-600">(919) 730-8782</span>
