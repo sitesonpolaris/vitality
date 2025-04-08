@@ -57,7 +57,7 @@ export default function Contact() {
 
         {/* Contact Form */}
         <div>
-         <form name="contact" method="POST" data-netlify="true">
+         <form name="contact" data-netlify="true">
   <input type="hidden" name="form-name" value="contact" />
   <p>
     <label>
@@ -75,7 +75,7 @@ export default function Contact() {
 </form>
 
 
-          <form name="contact" method="POST" data-netlify="true" hidden>
+          <form name="contact" data-netlify="true" hidden>
   <input type="text" name="name" />
   <input type="email" name="email" />
 </form>
