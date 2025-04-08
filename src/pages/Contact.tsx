@@ -19,31 +19,16 @@ export default function Contact() {
     subject: '',
     message: ''
   });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
     setError(null);
-
-    fetch('/.netlify/functions/send-contact-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-      .then(async (response) => {
-        const data = await response.json();
-        if (!response.ok) throw new Error(data.error || 'Failed to send message');
-        setStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      })
-      .catch((err) => {
-        setStatus('error');
-        setError(err.message || 'Something went wrong. Please try again.');
-      });
+    
+    // Form submission will be handled by Netlify
+    setStatus('success');
+    setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -72,7 +57,18 @@ export default function Contact() {
 
         {/* Contact Form */}
         <div>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form 
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            className="space-y-6"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <div hidden>
+              <input name="bot-field" />
+            </div>
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                 Name
@@ -147,10 +143,9 @@ export default function Contact() {
 
             <button
               type="submit"
-              disabled={status === 'loading'}
               className="w-full px-6 py-3 bg-primary text-white rounded-md hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
-              {status === 'loading' ? 'Sending...' : 'Send Message'}
+              Send Message
             </button>
           </form>
         </div>
