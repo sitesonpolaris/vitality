@@ -1,11 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react';
+import { Instagram, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [error, setError] = useState<string | null>(null);
+
+  // Handle form submission using fetch() to avoid page reload
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle newsletter signup
+
+    setStatus('idle');
+    setError(null);
+
+    const formData = new URLSearchParams();
+    formData.append('form-name', 'newsletter');
+    formData.append('email', email);
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setEmail('');
+        alert('Thank you for subscribing!');
+      } else {
+        setStatus('error');
+        setError('There was an error. Please try again.');
+      }
+    } catch (error) {
+      setStatus('error');
+      setError('An error occurred while submitting your form.');
+    }
   };
 
   return (
@@ -39,7 +69,7 @@ const Footer = () => {
               <li>
                 <Link to="/preparation" className="text-gray-600 hover:text-amber-600">Preparation</Link>
               </li>
-                 <li>
+              <li>
                 <Link to="/education" className="text-gray-600 hover:text-amber-600">Education</Link>
               </li>
               <li>
@@ -70,10 +100,17 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Stay Updated</h3>
             <form onSubmit={handleNewsletterSubmit} className="space-y-4">
+              {/* Hidden field to define the form name */}
+              <input type="hidden" name="form-name" value="newsletter" />
+              
               <input
                 type="email"
+                name="email"
                 placeholder="Enter your email"
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
               <button
                 type="submit"
@@ -82,6 +119,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </form>
+            {status === 'error' && <p className="text-red-500 text-sm mt-2">{error}</p>}
           </div>
         </div>
 
