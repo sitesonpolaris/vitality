@@ -4,8 +4,8 @@ export const products: Product[] = [
 
   //Dry sea moss
   {
-    id: 'prod_RwtS86nkSJJQ1H',
-    priceId: 'price_1R2zf9BgazzaDuWGhc7Ppvbn',
+    id: 'prod_SDjTdlAWkSiZJ6',
+    priceId: 'price_1RJI0TJemDY4zv34y0Eh1zkI',
     name: 'Premium Purple Sea Moss (Dried)',
     category: 'dried',
     price: 50.0,
@@ -15,8 +15,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RwtScbfCTvHIpb',
-    priceId: 'price_1R2zfiBgazzaDuWGMsl7duac',
+    id: 'prod_SDjQJMRbnjoRcD',
+    priceId: 'price_1RJHy7JemDY4zv34DnSI9CqK',
     name: 'Premium Green Sea Moss (Dried)',
     category: 'dried',
     price: 50.0,
@@ -26,8 +26,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RkyqJC4IclzV6s',
-    priceId: 'price_1R2zdhBgazzaDuWGvGUQZIKT',
+    id: 'prod_SDjTDZwG49t20y',
+    priceId: 'price_1RJI0wJemDY4zv34SMC3qBCU',
     name: 'Premium Gold Sea Moss (Dried)',
     category: 'dried',
     price: 50.0,
@@ -39,8 +39,8 @@ export const products: Product[] = [
 
   // FREE 4oz SAMPLE OPTIONS
   {
-    id: 'prod_RxJ3WzdcFHPOjl',
-    priceId: 'price_1R3ORKBgazzaDuWGnAkZQP78',
+    id: 'prod_SDjM1LM0rxYZ7y',
+    priceId: 'price_1RJHu3JemDY4zv34BZ6PlRA4',
     name: 'Gold Sea Moss Gel 4oz (Sample)',
     category: 'gel',
     price: 0.0,
@@ -50,8 +50,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RxJ3v4yMlTnuU0',
-    priceId: 'price_1R3ORmBgazzaDuWGTcgiPTZS',
+    id: 'prod_SDjMxZFKiSb4TO',
+    priceId: 'price_1RJHtaJemDY4zv34W8a3kVfi',
     name: 'Green Sea Moss Gel 4oz (Sample)',
     category: 'gel',
     price: 0.0,
@@ -61,8 +61,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RxJ497TLfDXXKd',
-    priceId: 'price_1R3OScBgazzaDuWGUrY4dwEt',
+    id: 'prod_SDjIolsjy0KOCh',
+    priceId: 'price_1RJHq3JemDY4zv34lhksh2X0',
     name: 'Purple Sea Moss Gel 4oz (Sample)',
     category: 'gel',
     price: 0.0,
@@ -74,8 +74,8 @@ export const products: Product[] = [
 
   // REGULAR SEA MOSS GELS
   {
-    id: 'prod_RwuVihDIU4QLel',
-    priceId: 'price_1R30hbBgazzaDuWGMtly5Ssb',
+    id: 'prod_SDjNJyYIItQ01q',
+    priceId: 'price_1RJHusJemDY4zv34JwLdAzFM',
     name: 'Gold Sea Moss Gel 16oz',
     category: 'gel',
     price: 30.0,
@@ -85,8 +85,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RwuitP1TDeFmeo',
-    priceId: 'price_1R30tEBgazzaDuWGivzrCtYB',
+    id: 'prod_SDjN0X4N23uRLY',
+    priceId: 'price_1RJHuaJemDY4zv34djgpO5ss',
     name: 'Gold Sea Moss Gel 24oz',
     category: 'gel',
     price: 40.0,
@@ -96,8 +96,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RxJ6uGXyaLvxgC',
-    priceId: 'price_1R3OUUBgazzaDuWGaZG9Q2nM',
+    id: 'prod_SDj8AJdlrTOYt9',
+    priceId: 'price_1RJHgZJemDY4zv34N9RjYKc6',
     name: 'Green Sea Moss Gel 16oz',
     category: 'gel',
     price: 30.0,
@@ -107,8 +107,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RxJ7M33ytHd9Kp',
-    priceId: 'price_1R3OUxBgazzaDuWGn93Qnxdj',
+    id: 'prod_SDj8RTYukR2cva',
+    priceId: 'price_1RJHgIJemDY4zv34u5ZNWNWM',
     name: 'Green Sea Moss Gel 24oz',
     category: 'gel',
     price: 40.0,
@@ -118,8 +118,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RxJ7tzSFgHG0lu',
-    priceId: 'price_1R3OVUBgazzaDuWG54kwxD5a',
+    id: 'prod_SDj73CDObYRUFS',
+    priceId: 'price_1RJHfSJemDY4zv344VM6zIru',
     name: 'Purple Sea Moss Gel 16oz',
     category: 'gel',
     price: 35.0,
@@ -129,8 +129,8 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: 'prod_RxJ8qNzbt1naAi',
-    priceId: 'price_1R3OVsBgazzaDuWG8Kbrdjo4',
+    id: 'prod_SDj6byIY15g9VO',
+    priceId: 'price_1RJHe2JemDY4zv34XsxTtG9j',
     name: 'Purple Sea Moss Gel 24oz',
     category: 'gel',
     price: 45.0,
