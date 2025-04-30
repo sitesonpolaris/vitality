@@ -51,7 +51,7 @@ export default function HeroSlideshow() {
               <span className="text-white">aka</span>{' '}
               <span className="inline-block">
                 <span className="bg-gradient-to-r from-amber-500 via-purple-600 to-green-500 text-transparent bg-clip-text animate-gradient">
-                  Seamoss
+                  Sea Moss
                 </span>
               </span>
             </h1>
