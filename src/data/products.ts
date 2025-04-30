@@ -43,7 +43,7 @@ export const products: Product[] = [
     priceId: 'price_1RJHu3JemDY4zv34BZ6PlRA4',
     name: 'Gold Sea Moss Gel 4oz (Sample)',
     category: 'gel',
-    price: 0.0,
+    price: 0.50,
     dimensions: { size: '4oz' },
     description: 'Enjoy a free 4oz sample of our premium Gold Sea Moss Gel. Limited to one per order.',
     images: ['https://static.wixstatic.com/media/c73eb8_b5094418333a4d289064c9cf387175cc~mv2.png'],
