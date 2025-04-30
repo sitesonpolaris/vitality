@@ -25,9 +25,9 @@ const initialState: CartState = {
   error: null
 };
 
-const TAX_RATE = 0.08; // 8% tax
+const TAX_RATE = 0.0; // 8% tax
 const SHIPPING_THRESHOLD = 100; // Free shipping over $100
-const SHIPPING_RATE = 15; // $15 shipping fee
+const SHIPPING_RATE = 0; // $15 shipping fee
 
 function calculateTotals(items: CartItem[]): Cart {
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
