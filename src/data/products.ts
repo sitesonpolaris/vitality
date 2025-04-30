@@ -22,7 +22,7 @@ export const products: Product[] = [
     price: 50.0,
     dimensions: { size: '1 bag' },
     description: 'Green sea moss variety, packed with minerals and nutrients to support overall wellness.',
-    images: ['https://static.wixstatic.com/media/c73eb8_8a88b2b0d0c7480ea872e6f743976bff~mv2.jpg'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Green%20Dry.png'],
     inStock: true,
   },
   {
@@ -57,7 +57,7 @@ export const products: Product[] = [
     price: 0.0,
     dimensions: { size: '4oz' },
     description: 'Try our nutrient-rich Green Sea Moss Gel with this free 4oz sample. One per order.',
-    images: ['https://static.wixstatic.com/media/c73eb8_7d88863c616c47c8955a330db65ec723~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Green%20Sample.png'],
     inStock: true,
   },
   {
@@ -68,7 +68,7 @@ export const products: Product[] = [
     price: 0.0,
     dimensions: { size: '4oz' },
     description: 'Try our antioxidant-rich Purple Sea Moss Gel for free with this 4oz sample. One per order.',
-    images: ['https://static.wixstatic.com/media/c73eb8_7a0cb405d02c4e59b4d61d10129cda89~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Purple%20Sample.png'],
     inStock: true,
   },
 
@@ -81,7 +81,7 @@ export const products: Product[] = [
     price: 30.0,
     dimensions: { size: '16oz' },
     description: 'Gold sea moss gel, made from high-quality wildcrafted sea moss. Supports digestion, immunity, and overall wellness.',
-    images: ['https://static.wixstatic.com/media/c73eb8_8b2017e593b747cda7d1063c6f81d0d3~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Gold%201.png'],
     inStock: true,
   },
   {
@@ -92,7 +92,7 @@ export const products: Product[] = [
     price: 40.0,
     dimensions: { size: '24oz' },
     description: 'Gold sea moss gel, packed with 92 essential minerals to nourish your body and promote overall health.',
-    images: ['https://static.wixstatic.com/media/c73eb8_8b2017e593b747cda7d1063c6f81d0d3~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Gold%201.png'],
     inStock: true,
   },
   {
@@ -103,7 +103,7 @@ export const products: Product[] = [
     price: 30.0,
     dimensions: { size: '16oz' },
     description: 'Green sea moss gel, a powerhouse of minerals and nutrients to enhance your wellness routine.',
-    images: ['https://static.wixstatic.com/media/c73eb8_1557c64a9e6446cbac50da309a4d08b3~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Green%201.png'],
     inStock: true,
   },
   {
@@ -114,7 +114,7 @@ export const products: Product[] = [
     price: 40.0,
     dimensions: { size: '24oz' },
     description: 'Green sea moss gel, full of essential minerals to support gut health and energy levels.',
-    images: ['https://static.wixstatic.com/media/c73eb8_1557c64a9e6446cbac50da309a4d08b3~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Green%201.png'],
     inStock: true,
   },
   {
@@ -125,7 +125,7 @@ export const products: Product[] = [
     price: 35.0,
     dimensions: { size: '16oz' },
     description: 'Purple sea moss gel, packed with antioxidants to support immunity and overall well-being.',
-    images: ['https://static.wixstatic.com/media/c73eb8_fb9625b605ef4b2fa1fe1f07a11e5ff7~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Purple%201.png'],
     inStock: true,
   },
   {
@@ -136,7 +136,7 @@ export const products: Product[] = [
     price: 45.0,
     dimensions: { size: '24oz' },
     description: 'Purple sea moss gel, rich in vitamins and minerals to enhance overall health and vitality.',
-    images: ['https://static.wixstatic.com/media/c73eb8_fb9625b605ef4b2fa1fe1f07a11e5ff7~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Purple%201.png'],
     inStock: true,
   },
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { products } from '../data/products';
 import HeroSlideshow from '../components/home/HeroSlideshow';
+import Flyers from '../components/home/Flyers';
 import FeaturedCollections from '../components/home/FeaturedCollections';
 import Story from '../components/home/Story'
 import Vitals from '../components/home/Vitals'
@@ -19,6 +20,7 @@ function Home() {
     <div>
       <HeroSlideshow />
       <Vitals />
+       <Flyers />
       <FeaturedCollections products={gelProducts} />
       <Story />
       <FeaturedCollections products={driedProducts} />
