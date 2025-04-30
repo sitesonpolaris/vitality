@@ -119,7 +119,7 @@ export default function ProductDetailModal({ product, isOpen, onClose, onAddToCa
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute right-4 top-4 text-gray-400 hover:text-gray-500"
+            className="absolute right-4 top-4 text-gray-400 hover:text-gray-500 z-50"
             aria-label="Close modal"
           >
             <X className="h-6 w-6" />
