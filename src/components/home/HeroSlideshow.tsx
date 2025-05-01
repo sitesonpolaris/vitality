@@ -51,7 +51,7 @@ export default function HeroSlideshow() {
               <span className="text-white">aka</span>{' '}
               <span className="inline-block">
                 <span className="bg-gradient-to-r from-amber-500 via-purple-600 to-green-500 text-transparent bg-clip-text animate-gradient">
-                  Sea Moss
+                  Seamoss
                 </span>
               </span>
             </h1>
@@ -65,18 +65,13 @@ export default function HeroSlideshow() {
                 >
                   Shop Now
                 </Link>
-              <button
-                onClick={() => {
-                  const storySection = document.querySelector('#story');
-                  if (storySection) {
-                    storySection.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
+              <Link
+                to="/education"
                 className="flex items-center space-x-2 text-white hover:text-amber-600 transition-colors"
               >
                 <Play size={24} />
                 <span>Learn About Seamoss</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
