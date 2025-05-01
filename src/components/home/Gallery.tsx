@@ -9,7 +9,6 @@ const GALLERY_IMAGES = [
 'https://static.wixstatic.com/media/c73eb8_9c32b18a5bae4597816d66ca12958e46~mv2.jpg',
   'https://static.wixstatic.com/media/c73eb8_71fda8cd9edd43119f6921360abb2f39~mv2.jpg',
   'https://static.wixstatic.com/media/c73eb8_fbaa663c871d4136a358790fd4cef1c1~mv2.jpg',
-  'https://static.wixstatic.com/media/c73eb8_6f65ec63140b4199b07bf1703e80f78c~mv2.jpg',
   'https://static.wixstatic.com/media/c73eb8_3bd133b17b7c453dbccc393606ddfe0b~mv2.jpg',
   'https://static.wixstatic.com/media/c73eb8_536c539ea28f4681a816fcd515bddc47~mv2.jpg',
   'https://static.wixstatic.com/media/c73eb8_c52318a4dd9a402db17dafdfdb694c06~mv2.jpg',
