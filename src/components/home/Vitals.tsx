@@ -5,8 +5,8 @@ import { Heart, Brain, Settings as Lungs, Droplets, Dumbbell, ShieldPlus } from 
 const VITAL_METRICS = [
   {
     icon: <Heart className="w-8 h-8" />,
-    label: 'Heart',
-    description: 'Supports Cardiovascular Health'
+    label: 'Sex',
+    description: 'Supports Libido Health'
   },
   {
     icon: <Brain className="w-8 h-8" />,
