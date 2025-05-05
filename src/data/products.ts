@@ -89,7 +89,7 @@ export const products: Product[] = [
     priceId: 'price_1RJHfSJemDY4zv344VM6zIru',
     name: 'Purple Sea Moss Gel 16oz',
     category: 'gel',
-    price: 35.0,
+    price: 30.0,
     dimensions: { size: '16oz' },
     description: 'Purple sea moss gel that naturally enhances libido and sexual wellness. Rich in minerals that support intimate health.',
     images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Purple%201.png'],
