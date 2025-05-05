@@ -48,7 +48,7 @@ export const products: Product[] = [
     price: 30.0,
     dimensions: { size: '16oz' },
     description: 'Gold sea moss gel that naturally enhances libido and sexual performance. Made from high-quality wildcrafted sea moss for optimal potency.',
-    images: ['https://static.wixstatic.com/media/c73eb8_8b2017e593b747cda7d1063c6f81d0d3~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Gold%201.png'],
     inStock: true,
   },
   {
@@ -59,7 +59,7 @@ export const products: Product[] = [
     price: 40.0,
     dimensions: { size: '24oz' },
     description: 'Our largest size of libido-enhancing Gold Sea Moss Gel. Packed with minerals that boost sex drive and support sexual wellness naturally.',
-    images: ['https://static.wixstatic.com/media/c73eb8_8b2017e593b747cda7d1063c6f81d0d3~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Gold%201.png'],
     inStock: true,
   },
   {
@@ -70,7 +70,7 @@ export const products: Product[] = [
     price: 30.0,
     dimensions: { size: '16oz' },
     description: 'Green sea moss gel rich in minerals that enhance libido and sexual vitality. A natural way to boost your intimate wellness routine.',
-    images: ['https://static.wixstatic.com/media/c73eb8_1557c64a9e6446cbac50da309a4d08b3~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Green%201.png'],
     inStock: true,
   },
   {
@@ -81,7 +81,7 @@ export const products: Product[] = [
     price: 40.0,
     dimensions: { size: '24oz' },
     description: 'Our largest size of Green Sea Moss Gel, packed with minerals that enhance sexual performance and boost libido naturally.',
-    images: ['https://static.wixstatic.com/media/c73eb8_1557c64a9e6446cbac50da309a4d08b3~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Green%201.png'],
     inStock: true,
   },
   {
@@ -92,7 +92,7 @@ export const products: Product[] = [
     price: 35.0,
     dimensions: { size: '16oz' },
     description: 'Purple sea moss gel that naturally enhances libido and sexual wellness. Rich in minerals that support intimate health.',
-    images: ['https://static.wixstatic.com/media/c73eb8_fb9625b605ef4b2fa1fe1f07a11e5ff7~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Purple%201.png'],
     inStock: true,
   },
   {
@@ -103,7 +103,7 @@ export const products: Product[] = [
     price: 40.0,
     dimensions: { size: '24oz' },
     description: 'Our largest size of Purple Sea Moss Gel, formulated to enhance libido and sexual vitality. Experience the full benefits of enhanced intimate wellness.',
-    images: ['https://static.wixstatic.com/media/c73eb8_fb9625b605ef4b2fa1fe1f07a11e5ff7~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Purple%201.png'],
     inStock: true,
   },
 
@@ -127,7 +127,7 @@ export const products: Product[] = [
     price: 0.0,
     dimensions: { size: '4oz' },
     description: 'Sample our Green Sea Moss Gel that naturally enhances libido and sexual wellness. Experience the difference. One per order.',
-    images: ['https://static.wixstatic.com/media/c73eb8_7d88863c616c47c8955a330db65ec723~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Green%20Sample.png'],
     inStock: true,
   },
   {
@@ -138,7 +138,7 @@ export const products: Product[] = [
     price: 0.0,
     dimensions: { size: '4oz' },
     description: 'Experience our Purple Sea Moss Gel that supports sexual health and enhances libido. Free 4oz sample, one per order.',
-    images: ['https://static.wixstatic.com/media/c73eb8_7a0cb405d02c4e59b4d61d10129cda89~mv2.png'],
+    images: ['https://yrlwfarajldbigpdyfuu.supabase.co/storage/v1/object/public/media//Purple%20Sample2.png'],
     inStock: true,
   },
 ];
